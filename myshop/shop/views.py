@@ -1,12 +1,10 @@
 from django.shortcuts import get_object_or_404, render
 from .models import Category, Product
+from cart.forms import CartAddProductForm
 
 # Create your views here.
 
 def product_list(request, category_slug=None):
-    request.session["opa"] = request.session.get("opa", 0) + 3
-    print(request.session["opa"])
-    print(request.session.get("opa"))
     category = None
     categories = Category.objects.all()
     products = Product.objects.filter(available=True)
@@ -22,4 +20,5 @@ def product_list(request, category_slug=None):
 
 def product_detail(request, id, slug):
     product = get_object_or_404(Product, id=id, slug=slug, available=True) #slug only needed for SEO-friendly URL;
-    return render(request, 'shop/product/detail.html', {'product': product})
+    cart_product_form = CartAddProductForm()
+    return render(request, 'shop/product/detail.html', {'product': product, 'cart_product_form': cart_product_form})
