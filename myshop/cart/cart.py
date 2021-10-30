@@ -5,6 +5,9 @@ from shop.models import Product
 class Cart(object):
     def __init__(self, request):
         self.session = request.session
+
+        print("SESSION: ", request.session)     #TODO: remove
+        print("SESSION: ", request.session.get(settings.CART_SESSION_ID))     #TODO: remove
         cart = self.session.get(settings.CART_SESSION_ID)
         if not cart:
             cart = self.session[settings.CART_SESSION_ID] = {}
