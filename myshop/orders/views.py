@@ -17,7 +17,7 @@ def order_create(request):
         cart.clear()
 
         # launch asynchronous task
-        order_created.delay(order.id)
+        # order_created.delay(order.id)     cannot be called - deprecated function
         
         # set the order in the session
         request.session['order_id'] = order.id
