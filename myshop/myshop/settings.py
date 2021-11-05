@@ -156,3 +156,9 @@ BRAINTREE_CONF = braintree.Configuration(
     BRAINTREE_PUBLIC_KEY,
     BRAINTREE_PRIVATE_KEY
     )
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+#WeasyPrint requires GTK3 runtime environment, which I installed in D:\
+#The next setting adds the required dlls from the installation dir.
+os.add_dll_directory(r"D:\Programs\GTK Runtime\GTK3-Runtime Win64\bin")
