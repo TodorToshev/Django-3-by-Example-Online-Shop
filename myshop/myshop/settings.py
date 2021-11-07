@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'payment',
     'coupons',
     'rosetta',
+    # 'clearcache',
 
 
     'django.contrib.admin',

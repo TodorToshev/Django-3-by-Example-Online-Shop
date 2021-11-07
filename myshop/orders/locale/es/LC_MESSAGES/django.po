@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 15:05+0200\n"
-"PO-Revision-Date: 2021-11-07 15:15+0000\n"
+"POT-Creation-Date: 2021-11-07 18:11+0200\n"
+"PO-Revision-Date: 2021-11-07 18:13+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -36,11 +36,11 @@ msgstr "dirección"
 
 #: .\orders\models.py:15
 msgid "postal code"
-msgstr "código postal"
+msgstr "Пощенски код"
 
 #: .\orders\models.py:16
 msgid "city"
-msgstr "ciudad"
+msgstr "Град"
 
 #: .\orders\templates\orders\order\create.html:4
 #: .\orders\templates\orders\order\create.html:7
@@ -68,3 +68,7 @@ msgstr "Общо"
 #: .\orders\templates\orders\order\create.html:30
 msgid "Place order"
 msgstr "Поръчай"
+
+#: .\orders\urls.py:8
+msgid "create/"
+msgstr "създай/"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 15:05+0200\n"
-"PO-Revision-Date: 2021-11-07 15:14+0000\n"
+"POT-Creation-Date: 2021-11-07 18:11+0200\n"
+"PO-Revision-Date: 2021-11-07 18:13+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -27,23 +27,59 @@ msgstr "Количество"
 msgid "Coupon"
 msgstr "Купон"
 
-#: .\myshop\settings.py:122
+#: .\myshop\settings.py:123
 msgid "English"
 msgstr "Inglés"
 
-#: .\myshop\settings.py:123
+#: .\myshop\settings.py:124
 msgid "Spanish"
 msgstr "Español"
+
+#: .\myshop\urls.py:24
+msgid "admin/"
+msgstr ""
+
+#: .\myshop\urls.py:25
+msgid "cart/"
+msgstr "количка/"
+
+#: .\myshop\urls.py:26
+msgid "orders/"
+msgstr "поръчки/"
+
+#: .\myshop\urls.py:27
+msgid "payment/"
+msgstr "плащане/"
+
+#: .\myshop\urls.py:28
+msgid "coupons/"
+msgstr "купони/"
+
+#: .\myshop\urls.py:29
+msgid "rosetta/"
+msgstr ""
+
+#: .\payment\urls.py:8
+msgid "process/"
+msgstr "обработка/"
+
+#: .\payment\urls.py:9
+msgid "done/"
+msgstr "изпълнено/"
+
+#: .\payment\urls.py:10
+msgid "canceled/"
+msgstr "отказано/"
 
 #: .\shop\templates\shop\base.html:8 .\shop\templates\shop\base.html:14
 msgid "My shop"
 msgstr "Моят магазин"
 
-#: .\shop\templates\shop\base.html:20
+#: .\shop\templates\shop\base.html:24
 msgid "Your cart"
 msgstr "Вашата количка"
 
-#: .\shop\templates\shop\base.html:22
+#: .\shop\templates\shop\base.html:26
 #, python-format
 msgid ""
 "\n"
@@ -60,9 +96,13 @@ msgstr[1] ""
 "\n"
 "%(items)s продукти, $%(total)s"
 
-#: .\shop\templates\shop\base.html:29
+#: .\shop\templates\shop\base.html:33
 msgid "Your cart is empty."
 msgstr "Количката е празна."
+
+#: .\shop\templates\shop\base.html:39
+msgid "Language"
+msgstr "Език"
 
 #: .\shop\templates\shop\product\detail.html:20
 msgid "Add to cart"
