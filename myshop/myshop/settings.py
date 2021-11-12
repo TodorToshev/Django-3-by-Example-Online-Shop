@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'payment',
     'coupons',
 
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -91,6 +90,10 @@ DATABASES = {
     }
 }
 
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
