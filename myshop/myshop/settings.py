@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'coupons',
     'rosetta',
     # 'clearcache',
+    'localflavor',
 
     'django.contrib.admin',
     'django.contrib.auth',

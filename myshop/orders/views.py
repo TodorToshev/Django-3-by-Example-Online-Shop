@@ -25,13 +25,13 @@ def order_create(request):
             for item in cart:
                 OrderItem.objects.create(order=order, product=item['product'], price=item['price'], quantity=item['quantity'])
         # clear the cart
-        cart.clear()
+            cart.clear()
 
         # launch asynchronous task
         # order_created.delay(order.id)     cannot be called - deprecated function
         
         # set the order in the session
-        request.session['order_id'] = order.id
+            request.session['order_id'] = order.id
         return redirect(reverse('payment:process'))
 
     else:
